@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="qXz-Ck-sRA">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x7o-Ia-3tH">
+                                <rect key="frame" x="50" y="76" width="270" height="100"/>
+                                <color key="backgroundColor" red="0.30641439349999999" green="0.31345543149999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="5C8-Lg-dAf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="x7o-Ia-3tH" secondAttribute="trailing" id="Cfk-g6-Uoy"/>
+                            <constraint firstItem="x7o-Ia-3tH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="56" id="EBL-kU-kwt"/>
+                            <constraint firstItem="x7o-Ia-3tH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="hye-0w-cEF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="topContraint" destination="EBL-kU-kwt" id="ndm-rY-Ca0"/>
+                        <outlet property="viewPan" destination="x7o-Ia-3tH" id="rxE-Zi-llq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-53" y="282"/>
+        </scene>
+        <!--Core Animation View Controller-->
+        <scene sceneID="OQw-gH-JYX">
+            <objects>
+                <viewController id="3Jr-t3-l2h" customClass="CoreAnimationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XeC-gk-XN1"/>
+                        <viewControllerLayoutGuide type="bottom" id="Oky-xq-MWv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eH8-XX-lNd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eCs-j6-HOm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="282"/>
+        </scene>
+        <!--Animation View Controller-->
+        <scene sceneID="XmF-Ks-Gfe">
+            <objects>
+                <viewController id="rUK-nw-E6H" customClass="CAAnimationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3Fi-3R-nQw"/>
+                        <viewControllerLayoutGuide type="bottom" id="69g-ad-XCG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Uuc-Gg-dcV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hd1-f7-1yB">
+                                <rect key="frame" x="107" y="424" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="animation:" destination="rUK-nw-E6H" eventType="touchUpInside" id="kRE-Lt-VX1"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cm2_daily_banner2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="VAC-5i-8va">
+                                <rect key="frame" x="32" y="65" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="VAC-5i-8va" id="VDb-xK-yHp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CAz-K9-jDa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="713" y="282"/>
+        </scene>
+        <!--Transform View Controller-->
+        <scene sceneID="o8M-O9-rm8">
+            <objects>
+                <viewController id="Mi7-fW-7ok" customClass="TransformViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="r86-Cn-Nfn"/>
+                        <viewControllerLayoutGuide type="bottom" id="e0d-g6-L49"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1ZN-Tp-7Iu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cm2_daily_banner2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="iF3-VF-fTv">
+                                <rect key="frame" x="101" y="99" width="119" height="95"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bw7-Xd-J7e">
+                                <rect key="frame" x="145" y="317" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.51189433111838256" green="1" blue="0.4046960546433328" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="位移"/>
+                                <connections>
+                                    <action selector="translation:" destination="Mi7-fW-7ok" eventType="touchUpInside" id="quM-8U-Ife"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5x-NV-UYE">
+                                <rect key="frame" x="145" y="355" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.51189433110000004" green="1" blue="0.40469605460000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="旋转"/>
+                                <connections>
+                                    <action selector="rotation:" destination="Mi7-fW-7ok" eventType="touchUpInside" id="m9Z-aK-v41"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8tf-tt-hrf">
+                                <rect key="frame" x="145" y="393" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.51189433110000004" green="1" blue="0.40469605460000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="缩放"/>
+                                <connections>
+                                    <action selector="scale:" destination="Mi7-fW-7ok" eventType="touchUpInside" id="gO0-z1-a2q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUd-zK-RNu">
+                                <rect key="frame" x="145" y="431" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.51189433110000004" green="1" blue="0.40469605460000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="还原"/>
+                                <connections>
+                                    <action selector="original:" destination="Mi7-fW-7ok" eventType="touchUpInside" id="n9f-Qb-Zp7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="iF3-VF-fTv" id="3tL-sh-4WN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kts-xE-oNz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1124" y="282"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="FbM-36-FHb">
+            <objects>
+                <viewController id="4kO-RG-P1V" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="r5s-NQ-3PR"/>
+                        <viewControllerLayoutGuide type="bottom" id="oDT-HZ-r70"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3An-ov-t87">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZLu-y4-PpR" customClass="TouchedView">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZLu-y4-PpR" firstAttribute="top" secondItem="r5s-NQ-3PR" secondAttribute="bottom" id="4DX-mn-GRF"/>
+                            <constraint firstItem="oDT-HZ-r70" firstAttribute="top" secondItem="ZLu-y4-PpR" secondAttribute="bottom" id="KvN-1I-syI"/>
+                            <constraint firstAttribute="trailing" secondItem="ZLu-y4-PpR" secondAttribute="trailing" id="MH5-tY-UU6"/>
+                            <constraint firstItem="ZLu-y4-PpR" firstAttribute="leading" secondItem="3An-ov-t87" secondAttribute="leading" id="SKv-kz-Idi"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jsp-BQ-SGo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1770" y="127"/>
+        </scene>
+        <!--Image View Controller-->
+        <scene sceneID="nYr-3n-gR5">
+            <objects>
+                <viewController id="ic1-8Z-pNQ" customClass="UIImageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rYS-v4-Ai5"/>
+                        <viewControllerLayoutGuide type="bottom" id="hW1-dv-Iea"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dDF-Ne-yiB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YlC-eh-Fq1">
+                                <rect key="frame" x="85" y="173" width="150" height="118"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="YlC-eh-Fq1" id="qKQ-cf-ys8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t7Q-SF-d6a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2194" y="94"/>
+        </scene>
+        <!--Transform3D View Controller-->
+        <scene sceneID="84L-Pr-ynn">
+            <objects>
+                <viewController id="qXz-Ck-sRA" customClass="CATransform3DViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mDE-qf-EoY"/>
+                        <viewControllerLayoutGuide type="bottom" id="mkJ-LN-FUk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="A7o-8G-Q3k">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cm2_daily_banner2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="gjR-pj-zc0">
+                                <rect key="frame" x="30" y="103" width="126" height="116"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUG-Mx-Z8T">
+                                <rect key="frame" x="224" y="90" width="30" height="30"/>
+                                <state key="normal" title="X"/>
+                                <connections>
+                                    <action selector="rotationX:" destination="qXz-Ck-sRA" eventType="touchUpInside" id="afb-HW-VZd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HKb-wW-GSN">
+                                <rect key="frame" x="224" y="139" width="30" height="30"/>
+                                <state key="normal" title="y"/>
+                                <connections>
+                                    <action selector="rroutationY:" destination="qXz-Ck-sRA" eventType="touchUpInside" id="p8l-Sf-CsZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EI8-mc-auV">
+                                <rect key="frame" x="224" y="177" width="30" height="30"/>
+                                <state key="normal" title="Z"/>
+                                <connections>
+                                    <action selector="rotationZ:" destination="qXz-Ck-sRA" eventType="touchUpInside" id="RQU-pz-omY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gk7-BK-GPe">
+                                <rect key="frame" x="224" y="231" width="30" height="30"/>
+                                <state key="normal" title="0"/>
+                                <connections>
+                                    <action selector="noChange:" destination="qXz-Ck-sRA" eventType="touchUpInside" id="p8b-0q-N5G"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="gjR-pj-zc0" id="G0A-jZ-4bf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k7w-B1-wjU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2817" y="94"/>
+        </scene>
+        <!--Gesture And Transform View Controller-->
+        <scene sceneID="hC6-nU-jPa">
+            <objects>
+                <viewController id="Iho-N6-yI7" customClass="GestureAndTransformViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="A8y-CU-m7d"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wne-YX-tmI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PpM-WY-9CZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cm2_daily_banner2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="TMr-c5-Ju1">
+                                <rect key="frame" x="88" y="101" width="155" height="96"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="TMr-c5-Ju1" id="Q5q-9p-jBm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dBo-FU-YOx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1392" y="260"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cm2_daily_banner2.jpg" width="640" height="300"/>
+    </resources>
+</document>
